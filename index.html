@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Kancharla | AI &amp; Full Stack Developer</title>
+    <meta name="description" content="Portfolio of Vivek Kancharla - Full Stack Developer and AI/ML Engineer specializing in Python, React, Node.js, FastAPI, and Machine Learning.">
+    <meta name="author" content="Vivek Kancharla">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Restore saved theme before first paint to avoid flash -->
+    <script>
+        (function(){
+            var t = localStorage.getItem('vk-theme');
+            if(t) document.documentElement.setAttribute('data-theme', t);
+        })();
+    </script>
+</head>
+<body>
+    <div id="scroll-progress"></div>
+
+    <!-- NAVBAR -->
+    <header id="main-header">
+        <nav class="navbar-glass">
+            <a href="#home" class="navbar-brand-vk">VK<span class="dot-accent">.</span></a>
+            <ul class="nav-links-list d-none d-md-flex">
+                <li><a href="#home" class="nav-pill active">Home</a></li>
+                <li><a href="#about" class="nav-pill">About</a></li>
+                <li><a href="#experience" class="nav-pill">Experience</a></li>
+                <li><a href="#projects" class="nav-pill">Projects</a></li>
+                <li><a href="#skills" class="nav-pill">Skills</a></li>
+                <li><a href="#certifications" class="nav-pill">Certifications</a></li>
+                <li><a href="#contact" class="nav-pill">Contact</a></li>
+            </ul>
+            <div class="navbar-right">
+                <button class="theme-btn" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                <a href="Vivek_Kancharla.pdf" class="resume-btn d-none d-sm-flex" download><i class="fa-solid fa-download"></i> Resume</a>
+                <button class="hamburger-btn d-md-none" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </nav>
+        <div class="mobile-menu d-md-none" id="mobile-menu">
+            <ul class="list-unstyled mb-0">
+                <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+                <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+                <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="home" class="hero-section-v2">
+            <div class="hero-dot-grid"></div>
+            <div class="hero-blob hero-blob-1"></div>
+            <div class="hero-blob hero-blob-2"></div>
+            <div class="container hero-container-v2">
+                <div class="row align-items-center hero-row g-5">
+                    <div class="col-lg-7 col-12" data-aos="fade-up" data-aos-delay="100">
+                        <div class="available-badge mb-3 d-inline-flex align-items-center gap-2">
+                            <span class="pulse-dot"></span>
+                            <span>Open to Opportunities</span>
+                        </div>
+                        <h1 class="hero-title-v2 mb-2">Vivek Kancharla &mdash;<br><span class="hero-name-accent">Full Stack Developer &amp; AI Engineer</span></h1>
+                        <h2 class="hero-tech-row mb-3">Python &nbsp;&bull;&nbsp; React &nbsp;&bull;&nbsp; Node.js &nbsp;&bull;&nbsp; FastAPI &nbsp;&bull;&nbsp; ML Systems</h2>
+                        <p class="hero-desc-v2 mb-4">Specializing in building scalable MERN web applications, machine learning pipelines, and AI-powered backends that go from prototype to production.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#projects" class="btn-primary-v2">View Projects</a>
+                            <a href="#contact" class="btn-secondary-v2">Contact Me</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="hero-photo-wrapper">
+                            <div class="hero-ring hero-ring-outer"></div>
+                            <div class="hero-ring hero-ring-inner"></div>
+                            <div class="hero-photo-circle">
+                                <img src="images/headshot_light.png" alt="Vivek Kancharla" class="hero-photo-img">
+                            </div>
+                            <div class="hero-status-badge">
+                                <span class="pulse-dot small-dot"></span>
+                                <span>Open to Work</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section-v2 section-bg-v2">
+            <div class="container">
+                <div class="section-header-v2 mb-5" data-aos="fade-up">
+                    <span class="section-badge-v2">About Me</span>
+                    <h2 class="section-title-v2">Who I Am</h2>
+                    <p class="section-sub-v2">Software engineer with a focus on full-stack development and AI/ML systems.</p>
+                </div>
+                <div class="row g-4 align-items-stretch">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-v2 h-100 p-3 d-flex flex-column">
+                            <h3 class="card-title-v2 mb-2">Professional Summary</h3>
+                            <p class="card-body-v2 mb-0">I am a Software Engineer and AI Developer specializing in full-stack applications and machine learning pipelines. I enjoy bringing ML models to production and building scalable backends with FastAPI, Node.js, and React.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="row g-2 h-100">
+                            <div class="col-6 d-flex"><div class="stat-card-v2 w-100 p-3 text-center"><div class="stat-number-v2" data-count="6">0</div><div class="stat-label-v2 small">Months Experience</div></div></div>
+                            <div class="col-6 d-flex"><div class="stat-card-v2 w-100 p-3 text-center"><div class="stat-number-v2" data-count="3">0</div><div class="stat-label-v2 small">Projects</div></div></div>
+                            <div class="col-6 d-flex"><div class="stat-card-v2 w-100 p-3 text-center"><div class="stat-number-v2" data-count="6">0</div><div class="stat-label-v2 small">Certifications</div></div></div>
+                            <div class="col-6 d-flex"><div class="stat-card-v2 w-100 p-3 text-center"><div class="stat-number-v2" data-count="10">0</div><div class="stat-label-v2 small">Technologies</div></div></div>
+                            <div class="col-12 d-flex">
+                                <div class="card-v2 w-100 p-2">
+                                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                                        <div class="quick-info-item small"><i class="fa-solid fa-location-dot text-accent me-2"></i><span>Hyderabad, India</span></div>
+                                        <div class="quick-info-item small"><i class="fa-solid fa-envelope text-accent me-2"></i><a href="mailto:vivekkancharla@gmail.com" class="quick-info-link">vivekkancharla@gmail.com</a></div>
+                                        <div class="quick-info-item small"><i class="fa-brands fa-github text-accent me-2"></i><a href="https://github.com/Vivekkancharla26" target="_blank" class="quick-info-link">Vivekkancharla26</a></div>
+                                        <div class="quick-info-item small"><i class="fa-brands fa-linkedin text-accent me-2"></i><a href="https://linkedin.com/in/vivekkancharla" target="_blank" class="quick-info-link">vivekkancharla</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="section-v2">
+            <div class="container">
+                <div class="section-header-v2 mb-5" data-aos="fade-up">
+                    <span class="section-badge-v2">Experience</span>
+                    <h2 class="section-title-v2">My Journey</h2>
+                    <p class="section-sub-v2">My professional journey in software engineering and data science.</p>
+                </div>
+                <div class="timeline-v2-container">
+                    <div class="timeline-v2-line"></div>
+                    <!-- Deepvibe — LEFT -->
+                    <div class="timeline-v2-item item-left" data-aos="fade-right" data-aos-delay="100">
+                        <div class="timeline-v2-dot"></div>
+                        <div class="timeline-v2-card card-v2 p-4">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="exp-logo-v2"><img src="images/deepvibe_logo.png" alt="Deepvibe IT Solutions"></div>
+                                <div class="flex-grow-1">
+                                    <h3 class="exp-company-v2 mb-0">Deepvibe IT Solutions Pvt. Ltd.</h3>
+                                    <p class="exp-role-v2 mb-2">Software Developer / Cloud Support Trainee</p>
+                                    <div class="d-flex flex-wrap gap-2 align-items-center">
+                                        <span class="badge-exp-v2 badge-green">6M Experience</span>
+                                        <span class="exp-date-v2"><i class="fa-regular fa-calendar me-1"></i>Oct 2025 – Mar 2026</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 42Learn — RIGHT -->
+                    <div class="timeline-v2-item item-right" data-aos="fade-left" data-aos-delay="200">
+                        <div class="timeline-v2-dot"></div>
+                        <div class="timeline-v2-card card-v2 p-4">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="exp-logo-v2"><img src="images/42learn_logo.png" alt="42Learn"></div>
+                                <div class="flex-grow-1">
+                                    <h3 class="exp-company-v2 mb-0">42Learn</h3>
+                                    <p class="exp-role-v2 mb-2">Data Science Intern</p>
+                                    <div class="d-flex flex-wrap gap-2 align-items-center">
+                                        <span class="badge-exp-v2 badge-blue">Academic Internship</span>
+                                        <span class="exp-date-v2"><i class="fa-regular fa-calendar me-1"></i>May 2024 &ndash; Jul 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CodeTantra — LEFT -->
+                    <div class="timeline-v2-item item-left" data-aos="fade-right" data-aos-delay="300">
+                        <div class="timeline-v2-dot"></div>
+                        <div class="timeline-v2-card card-v2 p-4">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="exp-logo-v2"><img src="images/codetantra_logo.png" alt="CodeTantra Tech"></div>
+                                <div class="flex-grow-1">
+                                    <h3 class="exp-company-v2 mb-0">CodeTantra Tech</h3>
+                                    <p class="exp-role-v2 mb-2">Machine Learning Intern</p>
+                                    <div class="d-flex flex-wrap gap-2 align-items-center">
+                                        <span class="badge-exp-v2 badge-blue">Academic Internship</span>
+                                        <span class="exp-date-v2"><i class="fa-regular fa-calendar me-1"></i>Jun 2023 &ndash; Jul 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="section-v2 section-bg-v2">
+            <div class="container">
+                <div class="section-header-v2 mb-5" data-aos="fade-up">
+                    <span class="section-badge-v2">Education</span>
+                    <h2 class="section-title-v2">Academic Background</h2>
+                    <p class="section-sub-v2">My formal education in engineering and technology.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-v2 p-4 p-md-5 position-relative overflow-hidden" style="border-left: 4px solid var(--primary);">
+                            <div class="d-flex flex-column flex-md-row align-items-md-center gap-4">
+                                <div class="cert-icon-v2 flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle" style="width: 64px; height: 64px; background: var(--primary-light); color: var(--primary); font-size: 1.75rem;">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-2">
+                                        <h3 class="exp-company-v2 mb-1 mb-md-0 fw-bold fs-4">PACE Institute of Technology &amp; Sciences</h3>
+                                        <span class="badge-exp-v2" style="background: var(--primary-light); color: var(--primary);"><i class="fa-regular fa-calendar me-1"></i>2021 &ndash; 2025</span>
+                                    </div>
+                                    <p class="exp-role-v2 mb-3" style="font-size: 1.1rem; color: var(--text-muted); font-weight: 500;">B.Tech &ndash; Artificial Intelligence &amp; Data Science</p>
+                                    
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="skill-tag-v2" style="font-size: 0.95rem; background: var(--bg-alt);"><i class="fa-solid fa-award me-2" style="color: var(--primary);"></i>CGPA: 7.21</span>
+                                    </div>
+                                    
+                                    <div class="mt-2 pt-3" style="border-top: 1px solid var(--border);">
+                                        <p class="mb-2 text-secondary fw-semibold text-uppercase" style="font-size: 0.75rem; letter-spacing: 1px;">Relevant Focus Areas</p>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="skill-tag-v2" style="font-size: 0.8rem;">Machine Learning</span>
+                                            <span class="skill-tag-v2" style="font-size: 0.8rem;">Data Structures</span>
+                                            <span class="skill-tag-v2" style="font-size: 0.8rem;">Database Systems</span>
+                                            <span class="skill-tag-v2" style="font-size: 0.8rem;">Deep Learning</span>
+                                            <span class="skill-tag-v2" style="font-size: 0.8rem;">NLP</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Decorative element -->
+                            <div class="position-absolute" style="top: -50px; right: -50px; width: 150px; height: 150px; background: radial-gradient(circle, var(--primary-light) 0%, rgba(255,255,255,0) 70%); border-radius: 50%; pointer-events: none;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRAINING & COURSES -->
+        <section id="training" class="section-v2">
+            <div class="container">
+                <div class="section-header-v2 mb-5" data-aos="fade-up">
+                    <span class="section-badge-v2">Training</span>
+                    <h2 class="section-title-v2">Training &amp; Courses</h2>
+                    <p class="section-sub-v2">Specialized training programs enhancing my technical skill set.</p>
+                </div>
+                <div class="row g-3 justify-content-center">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-v2 p-3 h-100 d-flex align-items-center gap-3">
+                            <div class="cert-icon-v2 cert-icon-blue" style="width: 40px; height: 40px; font-size: 1rem;"><i class="fa-solid fa-laptop-code"></i></div>
+                            <div>
+                                <h3 class="cert-title-v2 mb-1 fs-5">Machine Learning Training</h3>
+                                <p class="cert-issuer-v2 mb-1 small">MetchIn Learning Solutions</p>
+                                <span class="exp-date-v2 small"><i class="fa-regular fa-calendar me-1"></i>Jan 2025 &ndash; Jul 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-v2 p-3 h-100 d-flex align-items-center gap-3">
+                            <div class="cert-icon-v2 cert-icon-purple" style="width: 40px; height: 40px; font-size: 1rem;"><i class="fa-solid fa-laptop-code"></i></div>
+                            <div>
+                                <h3 class="cert-title-v2 mb-1 fs-5">Data Science Training</h3>
+                                <p class="cert-issuer-v2 mb-1 small">42Learn</p>
+                                <span class="exp-date-v2 small"><i class="fa-regular fa-calendar me-1"></i>May 2024 &ndash; Jul 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section-v2 section-bg-v2">
+            <div class="container">
+                <div class="section-header-v2 mb-5" data-aos="fade-up">
+                    <span class="section-badge-v2">Projects</span>
+                    <h2 class="section-title-v2">Featured Work</h2>
+                    <p class="section-sub-v2">A curated selection of engineering artifacts spanning machine learning, agentic workflows, and full-stack platforms.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-card-v2 card-v2 h-100 d-flex flex-column">
+                            <div class="project-img-v2" style="height: 180px; overflow: hidden;">
+                                <img src="images/fraud_detection_preview_new.jpg" alt="Fraud Detection" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                                <div class="project-img-overlay"><div class="d-flex gap-2"><a href="https://github.com/Vivekkancharla26/Fraud-Detection" target="_blank" class="project-icon-btn"><i class="fa-brands fa-github"></i></a><a href="#" class="project-icon-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+                                <span class="project-category-badge">NLP / ML</span>
+                            </div>
+                            <div class="project-body-v2 p-3 d-flex flex-column flex-grow-1">
+                                <h3 class="project-title-v2 mb-2 fs-5">Fraud Detection in Reviews</h3>
+                                <p class="project-desc-v2 mb-3 small">NLP machine-learning ensemble to classify genuine vs fraudulent product reviews using a Voting Classifier (SVM, Naive Bayes, Logistic Regression, Decision Trees).</p>
+                                <div class="d-flex flex-wrap gap-1 mt-auto mb-3"><span class="tech-pill-v2" style="font-size: 0.75rem;">Python</span><span class="tech-pill-v2" style="font-size: 0.75rem;">NLP</span><span class="tech-pill-v2" style="font-size: 0.75rem;">Scikit-Learn</span><span class="tech-pill-v2" style="font-size: 0.75rem;">PyTorch</span></div>
+                                <div class="border-top pt-2 d-flex justify-content-between align-items-center"><a href="https://github.com/Vivekkancharla26/Fraud-Detection" target="_blank" class="project-read-link small">View on GitHub <i class="fa-solid fa-arrow-right ms-1"></i></a><span class="project-outcome-v2 small">Ensemble Model</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-card-v2 card-v2 h-100 d-flex flex-column">
+                            <div class="project-img-v2" style="height: 180px; overflow: hidden;">
+                                <img src="images/chrono_ai_preview_new.jpg" alt="ChronoAI" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                                <div class="project-img-overlay"><div class="d-flex gap-2"><a href="https://github.com/Vivekkancharla26/ChronoAI" target="_blank" class="project-icon-btn"><i class="fa-brands fa-github"></i></a><a href="#" class="project-icon-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+                                <span class="project-category-badge">Agentic SaaS</span>
+                            </div>
+                            <div class="project-body-v2 p-3 d-flex flex-column flex-grow-1">
+                                <h3 class="project-title-v2 mb-2 fs-5">ChronoAI</h3>
+                                <p class="project-desc-v2 mb-3 small">Multi-agent task dispatcher backend using FastAPI, MongoDB, and WebSockets. Features a custom rule-based NLP engine for natural-language scheduling.</p>
+                                <div class="d-flex flex-wrap gap-1 mt-auto mb-3"><span class="tech-pill-v2" style="font-size: 0.75rem;">Python</span><span class="tech-pill-v2" style="font-size: 0.75rem;">FastAPI</span><span class="tech-pill-v2" style="font-size: 0.75rem;">MongoDB</span><span class="tech-pill-v2" style="font-size: 0.75rem;">NLP</span></div>
+                                <div class="border-top pt-2 d-flex justify-content-between align-items-center"><a href="https://github.com/Vivekkancharla26/ChronoAI" target="_blank" class="project-read-link small">View on GitHub <i class="fa-solid fa-arrow-right ms-1"></i></a><span class="project-outcome-v2 small">Rule-Based NLP</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-card-v2 card-v2 h-100 d-flex flex-column">
+                            <div class="project-img-v2" style="height: 180px; overflow: hidden;">
+                                <img src="images/rideconnect_preview_new.jpg" alt="RideConnect" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                                <div class="project-img-overlay"><div class="d-flex gap-2"><a href="https://github.com/Vivekkancharla26/RideConnect" target="_blank" class="project-icon-btn"><i class="fa-brands fa-github"></i></a><a href="#" class="project-icon-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+                                <span class="project-category-badge">Full Stack</span>
+                            </div>
+                            <div class="project-body-v2 p-3 d-flex flex-column flex-grow-1">
+                                <h3 class="project-title-v2 mb-2 fs-5">RideConnect</h3>
+                                <p class="project-desc-v2 mb-3 small">Full-stack driver booking platform with JWT auth, RBAC, and RESTful APIs. Engineered with a microservices-style architecture and Vercel CI/CD pipelines.</p>
+                                <div class="d-flex flex-wrap gap-1 mt-auto mb-3"><span class="tech-pill-v2" style="font-size: 0.75rem;">React</span><span class="tech-pill-v2" style="font-size: 0.75rem;">Node.js</span><span class="tech-pill-v2" style="font-size: 0.75rem;">Express.js</span><span class="tech-pill-v2" style="font-size: 0.75rem;">MongoDB</span></div>
+                                <div class="border-top pt-2 d-flex justify-content-between align-items-center"><a href="https://github.com/Vivekkancharla26/RideConnect" target="_blank" class="project-read-link small">View on GitHub <i class="fa-solid fa-arrow-right ms-1"></i></a><span class="project-outcome-v2 small">Full Stack</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5" data-aos="fade-up">
+                    <a href="https://github.com/Vivekkancharla26?tab=repositories" target="_blank" class="btn-secondary-v2"><i class="fa-brands fa-github me-2"></i>View All Projects on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section-v2">
+            <div class="container">
+                <div class="section-header-v2 mb-5" data-aos="fade-up">
+                    <span class="section-badge-v2">Skills</span>
+                    <h2 class="section-title-v2">Technical Skills</h2>
+                    <p class="section-sub-v2">Technologies I use to build scalable applications and intelligent systems.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-v2 skill-card-v2 p-4 h-100">
+                            <div class="skill-header-v2 mb-3"><div class="skill-icon-v2 skill-icon-blue"><i class="fa-solid fa-code"></i></div><h3 class="skill-cat-title-v2">Programming</h3></div>
+                            <div class="d-flex flex-wrap gap-2"><span class="skill-tag-v2">Python</span><span class="skill-tag-v2">SQL</span><span class="skill-tag-v2">C/C++</span><span class="skill-tag-v2">Java</span><span class="skill-tag-v2">R</span></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-v2 skill-card-v2 p-4 h-100">
+                            <div class="skill-header-v2 mb-3"><div class="skill-icon-v2 skill-icon-purple"><i class="fa-solid fa-cubes"></i></div><h3 class="skill-cat-title-v2">Web &amp; DBs</h3></div>
+                            <div class="d-flex flex-wrap gap-2"><span class="skill-tag-v2">HTML</span><span class="skill-tag-v2">CSS</span><span class="skill-tag-v2">JavaScript</span><span class="skill-tag-v2">MongoDB</span><span class="skill-tag-v2">SQL</span></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-v2 skill-card-v2 p-4 h-100">
+                            <div class="skill-header-v2 mb-3"><div class="skill-icon-v2 skill-icon-green"><i class="fa-solid fa-brain"></i></div><h3 class="skill-cat-title-v2">Libraries</h3></div>
+                            <div class="d-flex flex-wrap gap-2"><span class="skill-tag-v2">FastAPI</span><span class="skill-tag-v2">Scikit-Learn</span><span class="skill-tag-v2">PyTorch</span><span class="skill-tag-v2">NumPy</span><span class="skill-tag-v2">Pandas</span><span class="skill-tag-v2">Matplotlib</span><span class="skill-tag-v2">TensorFlow</span></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-v2 skill-card-v2 p-4 h-100">
+                            <div class="skill-header-v2 mb-3"><div class="skill-icon-v2 skill-icon-orange"><i class="fa-solid fa-screwdriver-wrench"></i></div><h3 class="skill-cat-title-v2">Tools</h3></div>
+                            <div class="d-flex flex-wrap gap-2"><span class="skill-tag-v2">VS Code</span><span class="skill-tag-v2">Jupyter Notebook</span><span class="skill-tag-v2">Power BI</span><span class="skill-tag-v2">Git</span><span class="skill-tag-v2">GitHub</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section id="certifications" class="section-v2 section-bg-v2">
+            <div class="container">
+                <div class="section-header-v2 mb-5" data-aos="fade-up">
+                    <span class="section-badge-v2">Certifications</span>
+                    <h2 class="section-title-v2">Verified Credentials</h2>
+                    <p class="section-sub-v2">Industry-recognized certifications validating my expertise.</p>
+                </div>
+                <div class="row g-3">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="cert-card-v2 card-v2 p-3"><div class="d-flex justify-content-between align-items-start"><div><h3 class="cert-title-v2 mb-1" style="font-size: 1rem;">AWS Cloud Foundations</h3><p class="cert-issuer-v2 mb-1 small" style="font-size: 0.75rem;">AWS Academy</p></div><div class="cert-icon-v2 cert-icon-blue" style="width: 35px; height: 35px; font-size: 0.9rem;"><i class="fa-brands fa-aws"></i></div></div><div class="d-flex justify-content-between align-items-center mt-2"><span class="cert-badge-v2" style="font-size: 0.7rem; padding: 2px 6px;">Verified</span><a href="https://www.credly.com" target="_blank" class="cert-verify-v2" style="font-size: 0.75rem;">Verify <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a></div></div></div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150"><div class="cert-card-v2 card-v2 p-3"><div class="d-flex justify-content-between align-items-start"><div><h3 class="cert-title-v2 mb-1" style="font-size: 1rem;">AWS Data Engineering</h3><p class="cert-issuer-v2 mb-1 small" style="font-size: 0.75rem;">AWS Academy</p></div><div class="cert-icon-v2 cert-icon-blue" style="width: 35px; height: 35px; font-size: 0.9rem;"><i class="fa-brands fa-aws"></i></div></div><div class="d-flex justify-content-between align-items-center mt-2"><span class="cert-badge-v2" style="font-size: 0.7rem; padding: 2px 6px;">Verified</span><a href="https://www.credly.com" target="_blank" class="cert-verify-v2" style="font-size: 0.75rem;">Verify <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a></div></div></div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="cert-card-v2 card-v2 p-3"><div class="d-flex justify-content-between align-items-start"><div><h3 class="cert-title-v2 mb-1" style="font-size: 1rem;">Intro to Data Science</h3><p class="cert-issuer-v2 mb-1 small" style="font-size: 0.75rem;">Infosys Springboard</p></div><div class="cert-icon-v2 cert-icon-purple" style="width: 35px; height: 35px; font-size: 0.9rem;"><i class="fa-solid fa-database"></i></div></div><div class="d-flex justify-content-between align-items-center mt-2"><span class="cert-badge-v2" style="font-size: 0.7rem; padding: 2px 6px;">Verified</span><a href="https://springboard.infosys.com" target="_blank" class="cert-verify-v2" style="font-size: 0.75rem;">Verify <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a></div></div></div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250"><div class="cert-card-v2 card-v2 p-3"><div class="d-flex justify-content-between align-items-start"><div><h3 class="cert-title-v2 mb-1" style="font-size: 1rem;">Intro to Internet of Things</h3><p class="cert-issuer-v2 mb-1 small" style="font-size: 0.75rem;">NPTEL</p></div><div class="cert-icon-v2 cert-icon-green" style="width: 35px; height: 35px; font-size: 0.9rem;"><i class="fa-solid fa-network-wired"></i></div></div><div class="d-flex justify-content-between align-items-center mt-2"><span class="cert-badge-v2" style="font-size: 0.7rem; padding: 2px 6px;">Verified</span><a href="https://nptel.ac.in" target="_blank" class="cert-verify-v2" style="font-size: 0.75rem;">Verify <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a></div></div></div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300"><div class="cert-card-v2 card-v2 p-3"><div class="d-flex justify-content-between align-items-start"><div><h3 class="cert-title-v2 mb-1" style="font-size: 1rem;">Machine Learning Basics</h3><p class="cert-issuer-v2 mb-1 small" style="font-size: 0.75rem;">Alteryx</p></div><div class="cert-icon-v2 cert-icon-orange" style="width: 35px; height: 35px; font-size: 0.9rem;"><i class="fa-solid fa-gears"></i></div></div><div class="d-flex justify-content-between align-items-center mt-2"><span class="cert-badge-v2" style="font-size: 0.7rem; padding: 2px 6px;">Verified</span><a href="https://academy.alteryx.com" target="_blank" class="cert-verify-v2" style="font-size: 0.75rem;">Verify <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a></div></div></div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350"><div class="cert-card-v2 card-v2 p-3"><div class="d-flex justify-content-between align-items-start"><div><h3 class="cert-title-v2 mb-1" style="font-size: 1rem;">Intro to Cybersecurity</h3><p class="cert-issuer-v2 mb-1 small" style="font-size: 0.75rem;">Palo Alto Networks</p></div><div class="cert-icon-v2 cert-icon-red" style="width: 35px; height: 35px; font-size: 0.9rem;"><i class="fa-solid fa-shield-halved"></i></div></div><div class="d-flex justify-content-between align-items-center mt-2"><span class="cert-badge-v2" style="font-size: 0.7rem; padding: 2px 6px;">Verified</span><a href="https://academy.paloaltonetworks.com" target="_blank" class="cert-verify-v2" style="font-size: 0.75rem;">Verify <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section-v2">
+            <div class="container">
+                <div class="section-header-v2 mb-5" data-aos="fade-up">
+                    <span class="section-badge-v2">Contact</span>
+                    <h2 class="section-title-v2">Get In Touch</h2>
+                    <p class="section-sub-v2">Open to roles, collaborations, and conversations about building intelligent systems.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-v2 p-4 h-100 d-flex flex-column">
+                            <div>
+                                <h3 class="card-title-v2 mb-4 fs-5">Contact Information</h3>
+                                <div class="d-flex align-items-center gap-3 mb-4"><div class="contact-icon-v2 icon-blue" style="width: 40px; height: 40px;"><i class="fa-solid fa-envelope"></i></div><div><p class="contact-label-v2 mb-0 small">Email</p><a href="mailto:vivekkancharla26@gmail.com" class="contact-val-v2">vivekkancharla26@gmail.com</a></div></div>
+                                <div class="d-flex align-items-center gap-3 mb-4"><div class="contact-icon-v2 icon-purple" style="width: 40px; height: 40px;"><i class="fa-solid fa-map-location-dot"></i></div><div><p class="contact-label-v2 mb-0 small">Location</p><span class="contact-val-v2">Hyderabad, India</span></div></div>
+                                <div class="d-flex align-items-center gap-3 mb-4"><div class="contact-icon-v2 icon-green" style="width: 40px; height: 40px;"><i class="fa-solid fa-file-arrow-down"></i></div><div><p class="contact-label-v2 mb-0 small">Resume</p><a href="Vivek_Kancharla.pdf" target="_blank" class="contact-val-v2">Download PDF</a></div></div>
+                            </div>
+                            <div class="mt-auto pt-4 border-top border-secondary border-opacity-25">
+                                <p class="contact-label-v2 mb-3 small">Find me on</p>
+                                <div class="d-flex gap-2">
+                                    <a href="mailto:vivekkancharla26@gmail.com" class="social-btn-v2" style="width: 40px; height: 40px;"><i class="fa-solid fa-envelope"></i></a>
+                                    <a href="https://github.com/Vivekkancharla26" target="_blank" class="social-btn-v2" style="width: 40px; height: 40px;"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://linkedin.com/in/vivekkancharla" target="_blank" class="social-btn-v2" style="width: 40px; height: 40px;"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-v2 p-3">
+                            <h3 class="card-title-v2 mb-3 fs-5">Send a Message</h3>
+                            <form id="contact-form" novalidate>
+                                <div class="row g-2">
+                                    <div class="col-md-6"><div class="form-group-v2"><label class="form-label-v2 small" for="contact-name">Full Name</label><input type="text" id="contact-name" class="form-input-v2 form-control-sm" placeholder="Your name" required></div></div>
+                                    <div class="col-md-6"><div class="form-group-v2"><label class="form-label-v2 small" for="contact-email">Email Address</label><input type="email" id="contact-email" class="form-input-v2 form-control-sm" placeholder="your@email.com" required></div></div>
+                                    <div class="col-12"><div class="form-group-v2"><label class="form-label-v2 small" for="contact-subject">Subject</label><input type="text" id="contact-subject" class="form-input-v2 form-control-sm" placeholder="What is this about?" required></div></div>
+                                    <div class="col-12"><div class="form-group-v2"><label class="form-label-v2 small" for="contact-message">Message</label><textarea id="contact-message" class="form-input-v2 form-textarea-v2 form-control-sm" placeholder="Your message..." rows="3" required></textarea></div></div>
+                                    <div class="col-12 mt-2">
+                                        <button type="submit" class="btn-primary-v2 w-100 py-2">Send Message <i class="fa-solid fa-paper-plane ms-2"></i></button>
+                                        <p class="text-center text-secondary mt-2 mb-0" style="font-size: 0.75rem;"><i class="fa-solid fa-clock me-1 text-accent"></i> Usually responds within 24 hours</p>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="alert alert-success mt-3 d-none p-2 small" id="form-success-alert"><i class="fa-solid fa-circle-check me-2"></i> Message sent!</div>
+                            <div class="alert alert-danger mt-3 d-none p-2 small" id="form-error-alert"><i class="fa-solid fa-circle-xmark me-2"></i> Something went wrong. Please try again.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-v2 py-5 text-center">
+        <div class="container">
+            <div class="footer-logo-v2 mb-2">VK<span>.</span></div>
+            <p class="footer-tagline-v2 mb-3">Full Stack Developer &amp; AI Engineer</p>
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <a href="mailto:vivekkancharla@gmail.com" class="footer-social-link"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/Vivekkancharla26" target="_blank" class="footer-social-link"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/vivekkancharla" target="_blank" class="footer-social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <p class="footer-copy-v2">&copy; 2026 Vivek Kancharla. All Rights Reserved.</p>
+            <button class="back-to-top-v2" id="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
